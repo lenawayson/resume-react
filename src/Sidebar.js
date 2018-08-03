@@ -29,7 +29,7 @@ class Sidebar extends Component {
             <div class="sidebar">
            
             <ul class="nav-ul">
-                <li><Link to="/"> <img class="img-circle"></img></Link></li>
+                <Link to="/"> <img class="img-circle"></img></Link>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/experience">Shoelaces</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
