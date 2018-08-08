@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Link } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import Sidebar from './Sidebar';
-import SidebarExample from './SidebarExample'
 
 class App extends Component {
   render() {

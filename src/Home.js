@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
-import logo from './logo.svg';
 import './App.css';
 
 class Home extends Component {
@@ -10,7 +8,7 @@ class Home extends Component {
             <div class="content">
                 <div class="home">
                 <h1>Lena   <div style={{color:"#4DB1B8", display:"inline"}}>Wayson</div> </h1> 
-                <h3> student. developer. designer. </h3>
+                <h3> Student. Developer. Designer. </h3>
                 </div>
             </div>
         )

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from './Home.js';
 import About from './About.js';
-import logo from './logo.svg';
+import Education from './Education.js';
+import Experience from './Experience.js'
 import './App.css';
 
 const routes = [
@@ -16,8 +17,12 @@ const routes = [
     main: () => <About />
   },
   {
-    path: "/shoelaces",
-    main: () => <h2>Shoelaces</h2>
+    path: "/education",
+    main: () => <Education />
+  },
+  {
+    path: "/experience",
+    main: () => <Experience />
   }
 ];
 
@@ -25,14 +30,14 @@ class Sidebar extends Component {
     render(){
         return(
             <Router>
-            <div style={{display: "flex"}}>
+            <div style={{display: "flex", flexDirection: "column", backgroundColor: "#f9f9f9"}}>
             <div class="sidebar">
-           
-            <ul class="nav-ul">
-                <Link to="/"> <img class="img-circle"></img></Link>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/experience">Shoelaces</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
+                <ul class="nav-ul">
+                    <Link to="/"> <img class="img-circle"></img></Link>
+                    <li><Link to="/about">About</Link></li>
+                    <li><Link to="/education">Education</Link></li>
+                    <li><Link to="/experience">Experience</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
                 {routes.map((route, index) => (
@@ -43,7 +48,6 @@ class Sidebar extends Component {
                         component={route.main}
                     />
                 ))}
-
             </div>
             </Router>
         );
