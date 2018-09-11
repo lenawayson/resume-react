@@ -4,7 +4,9 @@ import Home from './Home.js';
 import About from './About.js';
 import Education from './Education.js';
 import Experience from './Experience.js'
-import './App.css';
+import Leadership from './Leadership.js'
+import Photo from '../images/me.JPG'
+import '../App.css';
 
 const routes = [
   {
@@ -23,6 +25,10 @@ const routes = [
   {
     path: "/experience",
     main: () => <Experience />
+  },
+  {
+    path: "/leadership",
+    main: () => <Leadership />
   }
 ];
 
@@ -33,10 +39,11 @@ class Sidebar extends Component {
             <div style={{display: "flex", flexDirection: "column", backgroundColor: "#f9f9f9"}}>
             <div class="sidebar">
                 <ul class="nav-ul">
-                    <Link to="/"> <img class="img-circle"></img></Link>
+                    <Link to="/"> <img class="img-circle" src={Photo}></img></Link>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/education">Education</Link></li>
                     <li><Link to="/experience">Experience</Link></li>
+                    {/*<li><Link to="/leadership">Leadership</Link></li>*/}
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>
