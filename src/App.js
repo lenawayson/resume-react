@@ -5,7 +5,7 @@ import Sidebar from './Components/Sidebar';
 class App extends Component {
   render() {
     return (
-      <div>
+      <div style={{backgroundColor:"#f9f9f9"}}>
       <Sidebar />
       </div>
     );
