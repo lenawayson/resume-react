@@ -6,6 +6,7 @@ import Education from './Education.js';
 import Experience from './Experience.js'
 import Leadership from './Leadership.js'
 import Photo from '../images/me.JPG'
+import Resume from '../images/Resume-Sept-2018.pdf'
 import '../App.css';
 
 const routes = [
@@ -36,14 +37,14 @@ class Sidebar extends Component {
     render(){
         return(
             <Router>
-            <div style={{display: "flex", flexDirection: "column", backgroundColor: "#f9f9f9"}}>
+            <div style={{display: "flex", flexDirection: "column"}}>
             <div class="sidebar">
                 <ul class="nav-ul">
                     <Link to="/"> <img class="img-circle" src={Photo}></img></Link>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/education">Education</Link></li>
                     <li><Link to="/experience">Experience</Link></li>
-                    {/*<li><Link to="/leadership">Leadership</Link></li>*/}
+                    <li><Link to={Resume} target="_blank">Resume</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </div>

@@ -19,7 +19,7 @@ class About extends Component {
                 <br />
                 <br />
                 While I am constantly working to become a better developer, I distinguish myself from my peers with my outgoing personality. I enjoy meeting new people and getting the chance to understand their values,
-                and enjoy communicating with others. /*** I believe the best way to solve a problem is to understand the source. 
+                and enjoy communicating with others.
                 <br />
                 </div>
                 </div>
