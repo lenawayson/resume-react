@@ -6,7 +6,7 @@ import Education from './Education.js';
 import Experience from './Experience.js'
 import Leadership from './Leadership.js'
 import Photo from '../images/me.JPG'
-import Resume from '../images/Resume-Sept-2018.pdf'
+import Resume from '../images/Fall2018Resume.pdf'
 import '../App.css';
 
 const routes = [
